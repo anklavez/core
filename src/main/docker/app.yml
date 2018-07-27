@@ -10,10 +10,6 @@ services:
             - SPRING_DATA_MONGODB_URI=mongodb://core-mongodb:27017
             - SPRING_DATA_MONGODB_DATABASE=core
             - JHIPSTER_SLEEP=30 # gives time for the JHipster Registry to boot before the application
-    core-mongodb:
-        extends:
-            file: mongodb.yml
-            service: core-mongodb
     jhipster-registry:
         extends:
             file: jhipster-registry.yml
